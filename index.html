@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Laayoune City</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">
+        <p>Hommie.</p>
+    </div>
+   <ul>
+    <li> <a class="lien" href="http://">Home</a> </li>
+    <li> <a class="lien" href="http://">About</a>  </li>
+    <li> <a class="lien" href="http://">contact</a> </li>
+    <li> <a class="lien" href="http://">Visit</a> </li>
+    <li> <a class="icon" href="http://"><i class="fa fa-bars"></i></a> </li>
+
+   </ul>
+   
+  </nav>
+
+  <!-- <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="/img/house1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/house2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/house3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div> -->
+
+<section class="slideshow" >
+
+    <div class="slide-container">
+
+
+
+        <img class="slide" src="img/house1.jpg" alt="" style="width:100%" >
+        <img class="slide" src="img/house2.jpg" alt="" style="width:100%" >
+        <img class="slide" src="img/house3.jpg" alt="" style="width:100%" >
+
+         <!-- Next and previous buttons -->
+    
+    </div>
+    <a class="prev" onclick="goPrev()">&#10094;</a>
+    <a class="next" onclick="goNext()">&#10095;</a>
+
+
+</section>
+
+<section class="contact-form">
+    <h1>Send Me a Message</h1>
+    <p>Use this handy contact form to get in touch with me.</p>
+    
+    <form>
+      <div class="input-group">
+        <input id="salutation-mr" name="salutation" type="radio" value="Mr."/>
+        <label class="inline" for="salutation-mr">Mr.</label>
+        
+        <input id="salutation-mrs" name="salutation" type="radio" value="Mrs."/>
+        <label class="inline" for="salutation-mrs">Mrs.</label>
+        
+        <input id="salutation-ms" name="salutation" type="radio" value="Ms."/>
+        <label class="inline" for="salutation-ms">Ms.</label>
+      </div>
+      
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text"/>
+      </div>
+      
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email"/>
+      </div>
+      
+      <div class="input-group">
+        <label for="subject">How can I help you?</label>
+        <select id="subject" name="subject">
+          <option>I have a problem.</option>
+          <option>I have a general question.</option>
+        </select>
+      </div>
+      
+      <div class="input-group">
+        <label for="message">Enter a Message</label>
+        <textarea id="message" name="message" rows="6" cols="65"></textarea>
+      </div>
+      
+      <div class="input-group">
+        <p class="group-label">Please send me:</p>
+        <input id="snacks-pizza" name="snacks" type="checkbox" value="pizza"/>
+        <label class="inline" for="snacks-pizza">Pizza</label>
+        <input id="snacks-cake" name="snacks" type="checkbox" value="cake"/>
+        <label class="inline" for="snacks-cake">Cake</label>
+      </div>
+      <input name="secret" type="hidden" value="1b3a9374-1a8e-434e-90ab-21aa7b9b80e7"/>
+      <button type="submit">Send It!</button>
+    </form>
+  </section>
+  
+  <div class="results">
+    <h2>Form Data</h2>
+    
+    <pre></pre>
+  </div>
+
+
+<script src="index.js"></script>
+<script src="json.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+:root {
+    --color-lightest: #f9fdfe;
+    --color-gray-light: #cdcfcf;
+    --color-gray-medium: #686a69;
+    --color-gray-dark: #414643;
+    --color-darkest: #2a2f2c;
+  }
+  
+
+
+*{
+    margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(32, 27, 27);
+    background: var(--color-lightest);
+    color: var(--color-gray-medium);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.nav{
+    position: fixed;
+	width: 100%;
+    top: 0px;
+	background-color: #505256;
+	line-height: 75px;
+    display: block;
+   transition: top 0.3s;
+  
+}
+.nav .logo{
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: 0.1em; 
+    margin-left: 1em;
+}
+.nav .logo p{
+	float: left;
+	color:#ffffff;
+}
+.nav ul{
+	float: right;
+}
+.nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+.nav ul li a{
+	color:rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 1.25em;
+	padding:0px 32px;
+}
+.nav ul li a:hover{
+	color: #f5a800;
+}
+.nav ul li .active{
+	color: #f5a800;
+}
+
+.nav ul li .icon{
+
+    display: none;
+
+}
+
+
+/*----- responsive -------------------*/
+
+@media  screen and (max-width:600px) {
+
+.nav ul li .lien {
+        display: none;
+
+    }
+
+.nav ul li .icon{
+
+    
+     float: right;
+    display: block; 
+}
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    nav .responsive {position: relative;}
+    nav.responsive ul li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive ul li .lien{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+  /*----- slideshow -------------------*/
+
+
+  .slideshow{
+    
+    display: block;
+    height: 70vh;
+
+  }
+
+  .slide-container{
+
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 0 100px;
+    position: relative;
+    overflow: hidden;
+    background-color: #45a049;
+  }
+
+
+  .slide{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    transition: 1s;
+    /* left: 100%; */
+  }
+
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    left: 15%;
+    background-color: black;
+
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    right: 15%;
+    background-color: black;
+  }
+
+
+
+  /* -----------------------------------section form------------------------*/
+
+.contact{
+
+    height: 70vh;
+    background-color: #04AA6D;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.contact-form,
+.results {
+  width: 90vw;
+  max-width: 550px;
+  margin: 8vh auto;
+}
+
+p {
+  margin-top: 0.5rem;
+  font-size: 87.5%;
+}
+
+.results pre {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: $color-lightest;
+  border: 1px solid var(--color-gray-light);
+  overflow-x: scroll;
+}
+
+.contact-form form {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 1rem 0 2rem;
+  border-top: 1px solid var(--color-gray-light);
+  border-bottom: 1px solid var(--color-gray-light);
+  overflow: hidden;
+}
+
+.input-group {
+  margin-top: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.contact-form label {
+  display: block;
+  color: $color-gray-dark;
+  font-family: Lato, sans-serif;
+  font-size: 90%;
+  line-height: 1.125;
+}
+
+.group-label {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 90%;
+}
+
+.contact-form label.inline {
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  display: block;
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid $color-gray-light;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  transition: 150ms border-color linear;
+}
+
+.contact-form input[type=checkbox],
+.contact-form input[type=radio] {
+  display: inline-block;
+  width: auto;
+}
+
+.contact-form input[type=checkbox]:not(:first-of-type),
+.contact-form input[type=radio]:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form input:active {
+  border-color: var(--color-gray-medium);
+}
+
+.contact-form button {
+  display: block;
+  margin: 0.5rem 1rem 0;
+  padding: 0 1rem 0.125rem;
+  background-color: var(--color-gray-medium);
+  border: 0;
+  color: var(--color-lightest);
+  font-family: lato, sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  transition: 150ms all linear;
+}
+
+.contact-form button:hover,
+.contact-form button:active,
+.contact-form button:focus {
+  background: var(--color-darkest);
+  cursor: pointer;
+}
