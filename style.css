@@ -4,6 +4,8 @@
   --color-gray-medium: #686a69;
   --color-gray-dark: #414643;
   --color-darkest: #2a2f2c;
+  --bs-dark: #212529;
+
 }
 
 * {
@@ -12,8 +14,15 @@
   box-sizing: border-box;
 }
 
+body.light
+{  background-color: #e8e8e8 ; /* When dark mode is on, set background color to black */  
+  color: #212121; /* When dark mode is on, set text color to white */
+}
+
 body {
-  background-image: url("bachg.jpg");
+  background-color: #212529;
+  color: #e8e8e8;
+  /* background-image: url("bachg.jpg"); */
   /* background-color: rgb(32, 27, 27); */
   /* background: var(--color-lightest); */
   /* color: white; */
@@ -23,7 +32,8 @@ body {
   line-height: 1.45;
 }
 
-.nav {
+
+nav {
   position: fixed;
   width: 100%;
   top: 0px;
@@ -32,48 +42,48 @@ body {
   display: block;
   transition: top 0.3s;
 }
-.nav .logo {
+nav .logo {
   font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 0.1em;
   margin-left: 1em;
 }
-.nav .logo p {
+nav .logo p {
   float: left;
   color: #ffffff;
 }
-.nav ul {
+nav ul {
   float: right;
 }
-.nav ul li {
+nav ul li {
   display: inline-block;
   list-style: none;
 }
-.nav ul li a {
+nav ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.25em;
   padding: 0px 32px;
 }
-.nav ul li a:hover {
+nav ul li a:hover {
   color: #f5a800;
 }
-.nav ul li .active {
+nav ul li .active {
   color: #f5a800;
 }
 
-.nav ul li .icon {
+nav ul li .icon {
   display: none;
 }
 
 /*----- responsive -------------------*/
 
 @media screen and (max-width: 600px) {
-  .nav ul li .lien {
+  nav ul li .lien {
     display: none;
   }
 
-  .nav ul li .icon {
+  nav ul li .icon {
     float: right;
     display: block;
   }
@@ -164,7 +174,7 @@ body {
 
 .text {
   width: 50%;
-  color: #f9fdfe;
+  /* color: #f9fdfe; */
   font-size: 2.5em;
   text-transform: uppercase;
   margin-left: 1em;
@@ -195,35 +205,35 @@ body {
 }
 
 .text span:nth-child(1) {
-  animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 2.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .text span:nth-child(2) {
-  animation: fade-in 1.5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 2.5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .text span:nth-child(3) {
-  animation: fade-in 1.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 2.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .text span:nth-child(4) {
-  animation: fade-in 1.5s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 2.5s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .text span:nth-child(5) {
-  animation: fade-in 1.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 2.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .text span:nth-child(6) {
-  animation: fade-in 1.5s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 2.5s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .text span:nth-child(7) {
-  animation: fade-in 1.5s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 2.5s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .text span:nth-child(8) {
-  animation: fade-in 1.5s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 2.5s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @keyframes fade-in {
@@ -312,7 +322,7 @@ p {
   display: block;
   margin-top: 0.25rem;
   padding: 0.5rem 0.75rem;
-  border: 1px solid $color-gray-light;
+  border: 1px solid var(--color-gray-light);
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -363,3 +373,38 @@ p {
   justify-content: flex-end;
   align-items: center;
 }
+
+body.light
+{  background-color: #e8e8e8 ; /* When dark mode is on, set background color to black */  
+  color: #212121; /* When dark mode is on, set text color to white */
+}
+
+
+.groupe-btn {
+
+  text-align: center;
+  position: relative;
+
+}
+
+.groupe-btn button{
+  position: relative;
+  padding: 10px 25px;
+
+  margin-bottom: 5em;
+
+}
+
+
+.dark-btn{
+  background-color: #212121;
+  color: white;
+}
+
+
+
+
+
+
+
+
